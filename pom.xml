@@ -1,5 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.kk</groupId>
@@ -17,7 +18,7 @@
 	</organization>
 
 	<properties>
-		<jdk.version>17</jdk.version>
+		<jdk.version>1.8</jdk.version>  <!-- Changed from 17 to 1.8 -->
 		<spring.version>5.3.34</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
@@ -26,11 +27,9 @@
 		<sonar.password>password</sonar.password> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 	</properties>
 
 	<dependencies>
-		
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
@@ -90,11 +89,9 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
 	</dependencies>
 	
 	<distributionManagement>
-	
 	    <repository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Releases Nexus Repository</name>
@@ -106,7 +103,6 @@
 	      <name>KK FUNDA Snapshot Nexus Repository </name>
 	      <url>http://172.31.40.189:8081/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
-	    
 	</distributionManagement>
 	
 	<build>
@@ -146,9 +142,6 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
-			
-</plugins>
+		</plugins>
 	</build>
-	
-	
 </project>
